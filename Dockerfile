@@ -1,3 +1,2 @@
-FROM tomcat:latest
-# Dummy text to test 
-COPY target/java-web-app*.war /usr/local/tomcat/webapps/java-web-app.war
+FROM httpd:2.4
+COPY ./public-html/ /usr/local/apache2/htdocs/
