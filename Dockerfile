@@ -1,2 +1,2 @@
 FROM httpd:2.4
-COPY ./public-html/ /usr/local/apache2/htdocs/
+COPY target/java-web-app*.war /usr/local/tomcat/webapps/java-web-app.war
